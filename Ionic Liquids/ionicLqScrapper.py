@@ -105,7 +105,7 @@ validSolvents = ['C2H3N', 'C4H7N', 'C6H8N2', 'CH4O', 'C2H6O', 'C4H10O', 'C8H18O'
 subjectSolute = ['C10H15F6N3O4S2', '1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide']
 
 #driver = webdriver.Chrome(r'D:\TT-RPG\Code\PythonScripts\NPCgen\chromedriver_win32\chromedriver.exe',chrome_options=options)# windows
-driver = webdriver.Chrome('/mnt/d/TT-RPG/Code/PythonScripts/NPCgen/chromedriver_win32/chromedriver.exe',chrome_options=options) #linux
+driver = webdriver.Chrome('.../chromedriver.exe',chrome_options=options) #linux
 driver.get('https://ilthermo.boulder.nist.gov/')
 
 try:
@@ -208,4 +208,8 @@ for count in range(0, len(exportDf)):
 	df.to_csv(uniquemols[count] + ".csv")
 
 #manually prune any undesired data sets that passed through the filter due to matching empirical formulas
+<<<<<<< HEAD
 #when done move to plotter.py
+=======
+#when done move to plotter.py
+>>>>>>> 3371da9e22b983b1b067293edb8fb4751b54115a
